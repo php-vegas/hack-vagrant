@@ -29,11 +29,16 @@ class lvphp() {
   }
 
   apache::vhost {
-    'lvhackalicious.dev':
-      docroot => '/symfony/web',
+    'symfony.lvhack':
+      docroot => '/lvhack/symfony/web',
       priority => '10',
       vhost_name => '*',
-      port => '80',
+      port => '80';
+    'silex.lvhack':
+      docroot => '/lvhack/silex/web',
+      priority => '20',
+      vhost_name => '*',
+      port => '80';
   }
 
   package {
@@ -83,9 +88,5 @@ class lvphp() {
       owner => 'root',
       group => 'root',
       source => "puppet:///modules/lvphp/composer.phar";
-    "/symfony/web":
-      owner => 'vagrant',
-      group => 'vagrant',
-      ensure => directory;
   }
 }
