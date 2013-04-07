@@ -1,2 +1,3 @@
+SYMFONY!
 <?php
 phpinfo();

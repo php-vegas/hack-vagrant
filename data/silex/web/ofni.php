@@ -1,0 +1,3 @@
+SILEX!
+<?php
+phpinfo();
