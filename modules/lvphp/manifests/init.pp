@@ -88,5 +88,12 @@ class lvphp() {
       owner => 'root',
       group => 'root',
       source => "puppet:///modules/lvphp/composer.phar";
+    [
+      "/lvhack/symfony/web",
+      "/lvhack/silex/web"
+    ]:
+      owner => 'vagrant',
+      group => 'vagrant',
+      ensure => directory;
   }
 }
