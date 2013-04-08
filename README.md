@@ -15,8 +15,6 @@ Install vagrant and the associated virtual machine software; usually Virtualbox,
 after you clone this repo, just cd to the appropriate folder and:
 
 ``` bash
-git submodule init
-git submodule update
 vagrant up
 ```
 
