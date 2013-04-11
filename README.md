@@ -20,6 +20,13 @@ vagrant up
 
 Once this is all complete head on over to http://localhost:8080/ofni.php and you should see the handy dandy phpinfo output.
 
+To connect to the virtual machine just execute the following:
+``` bash
+vagrant ssh
+```
+
+More information for Vagrant can be found at http://docs.vagrantup.com/v2/
+
 ## Advanced usage
 
 There are a few different virtualhosts installed. If you have the magic of dnsmasq, you can see each of them. By default the symfony project is the first to be loaded so it takes precedence.
